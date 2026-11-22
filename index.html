@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shaikh Mohammed Joharali Aralikatti · Data Annotation Team Lead</title>
+<style>
+:root{--bg:#060a12;--card:#0e1626;--line:#1b2a45;--tx:#e6edfb;--mut:#8b9cbf;--acc:#3b82f6;--acc2:#22d3ee;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+.hero{position:relative;padding:56px 0 36px;overflow:hidden;border-bottom:1px solid var(--line)}
+#lidar{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative}
+.status{display:inline-flex;gap:8px;align-items:center;font-size:12px;color:var(--acc2);border:1px solid rgba(34,211,238,.35);padding:5px 12px;border-radius:6px;background:rgba(6,10,18,.7)}
+.dot{width:7px;height:7px;border-radius:50%;background:#22c55e;animation:p 1.6s infinite}
+@keyframes p{50%{opacity:.3}}
+h1{font-size:clamp(30px,6.5vw,56px);line-height:1.08;margin:16px 0 6px;letter-spacing:-1px}
+.grad{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);max-width:640px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.meta a,.meta span{font-size:13px;border:1px solid var(--line);background:rgba(14,22,38,.85);padding:7px 12px;border-radius:8px;color:var(--tx)}
+.meta a:hover{border-color:var(--acc)}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(6,10,18,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:9;background:rgba(6,10,18,.92)}
+.tabs .wrap{display:flex;gap:10px;padding-top:12px;padding-bottom:12px}
+.tab{flex:1;cursor:pointer;font:inherit;text-align:left;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;transition:.2s}
+.tab small{display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--acc2)}
+.tab b{font-size:15px;color:var(--tx)}
+.tab.on{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset,0 6px 22px rgba(59,130,246,.25)}
+section{padding:40px 0 0}
+h2{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--acc2);margin:0 0 14px;display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.view{display:none;padding-bottom:20px}.view.on{display:block;animation:in .5s}
+@keyframes in{from{opacity:0;transform:translateY(12px)}}
+.lead{font-size:16px;color:#c3cfe8;margin:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:20px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.stat b{display:block;font-size:26px;color:var(--acc2)}
+.stat span{font-size:12.5px;color:var(--mut)}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;transition:.25s}
+.card:hover{border-color:var(--acc);transform:translateY(-3px)}
+.card h3{margin:0 0 10px;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-size:12.5px;padding:4px 10px;border-radius:6px;border:1px solid var(--line);color:var(--mut);background:rgba(59,130,246,.07)}
+.tl{border-left:2px solid var(--line);padding-left:22px;margin-left:4px}
+.it{position:relative;margin-bottom:22px}
+.it::before{content:"";position:absolute;left:-29px;top:7px;width:10px;height:10px;background:var(--acc);transform:rotate(45deg);box-shadow:0 0 0 4px rgba(59,130,246,.2)}
+.when{font-size:12px;color:var(--acc2)}
+.it h3{margin:2px 0 0;font-size:16px}.org{color:var(--mut);font-size:13px}
+.it ul{margin:8px 0 0;padding-left:18px;color:#b6c4e2;font-size:14.5px}.it li{margin-bottom:4px}
+.tag{font-size:11px;color:var(--acc2);border:1px solid rgba(34,211,238,.35);border-radius:5px;padding:1px 7px}
+.proj p{margin:8px 0 0;color:var(--mut);font-size:14px}
+.btn{display:inline-block;margin-top:22px;padding:11px 20px;border-radius:10px;font:600 14px inherit;font-family:inherit;color:#fff;border:0;cursor:pointer;background:linear-gradient(135deg,var(--acc),#2563eb);box-shadow:0 8px 22px rgba(59,130,246,.35)}
+.ct{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.ct a,.ct div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:block;word-break:break-word}
+.ct a:hover{border-color:var(--acc)}
+.ct small{display:block;color:var(--acc2);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+footer{margin-top:40px;padding:22px 0;text-align:center;color:var(--mut);font-size:12.5px;border-top:1px solid var(--line)}
+@media(max-width:520px){.tab b{font-size:13px}.tab small{font-size:10px}}
+@media print{body::before,.tabs,#lidar,.btn{display:none!important}
+ :root{--bg:#fff;--card:#fff;--line:#d5dbe8;--tx:#111;--mut:#444;--acc:#1d4ed8;--acc2:#1d4ed8}
+ body{background:#fff;color:#111}.grad{background:none;color:#1d4ed8}.lead,.it ul{color:#222}.hero{padding:10px 0}.view{display:none!important}.view.on{display:block!important}section{padding-top:18px;break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+<canvas id="lidar"></canvas>
+<div class="wrap">
+<span class="status mono"><span class="dot"></span>TEAM LEAD · OPEN TO OPPORTUNITIES</span>
+<h1><span class="grad">Shaikh Mohammed</span><br>Joharali Aralikatti</h1>
+<p class="sub">Team Lead – Data Annotation &amp; Computer Vision Operations at iMerit Technology Services. Leading 25+ operators across 2D, 3D LiDAR and video annotation for autonomous mobility.</p>
+<div class="meta mono">
+<span>📍 Dharwad, Karnataka</span>
+<a href="tel:+917483537121">📞 +91 7483537121</a>
+<a href="mailto:smjouharali87@gmail.com">✉ smjouharali87@gmail.com</a>
+<a href="https://linkedin.com/in/shaikh-muhammad-2a6ab0367" target="_blank" rel="noopener">in LinkedIn</a>
+</div>
+</div>
+</header>
+
+<main class="wrap" style="padding-top:8px">
+
+<!-- TEAM LEAD -->
+<div class="view on" id="v-team-lead">
+<section><h2 class="mono">01 / Profile</h2>
+<p class="lead">Results-driven Data Annotation Team Lead managing 25+ operators (including ILs and QAs) across computer vision annotation, 3D LiDAR point-cloud labeling and QA workflows at iMerit. Delivers consistently high efficiency, quality and utilization across 2D, 3D and video annotation programs for autonomous mobility, with self-built Google Sheets dashboards and Apps Script automation.</p>
+<div class="stats"><div class="stat"><b class="mono">25+</b><span>Operators, ILs &amp; QAs led</span></div><div class="stat"><b class="mono">130%+</b><span>Team efficiency</span></div><div class="stat"><b class="mono">99%+</b><span>Quality accuracy</span></div><div class="stat"><b class="mono">90%+</b><span>Utilization</span></div></div></section>
+
+<section><h2 class="mono">02 / Leadership Skills</h2>
+<div class="grid">
+<div class="card"><h3>Operations &amp; Leadership</h3><div class="chips"><span class="chip">Team Supervision (25+)</span><span class="chip">Day-to-Day Operations</span><span class="chip">Task Allocation</span><span class="chip">Quality Assurance</span><span class="chip">Error Root-Cause Analysis</span><span class="chip">Performance Reviews</span></div></div>
+<div class="card"><h3>KPI Tracking</h3><div class="chips"><span class="chip">Efficiency (130%+)</span><span class="chip">Quality (99%+)</span><span class="chip">Utilization (90%+)</span><span class="chip">Productivity Reporting</span></div></div>
+<div class="card"><h3>Annotation &amp; Computer Vision</h3><div class="chips"><span class="chip">2D &amp; 3D Annotation</span><span class="chip">3D LiDAR Point-Cloud Labeling</span><span class="chip">Video Object Tracking</span><span class="chip">Autonomous-Mobility Datasets</span><span class="chip">Vehicle &amp; Signage Classification</span></div></div>
+<div class="card"><h3>Automation &amp; Reporting</h3><div class="chips"><span class="chip">Google Sheets Dashboards</span><span class="chip">KPI Trackers &amp; Formulas</span><span class="chip">Google Apps Script</span><span class="chip">Workflow Alerts</span><span class="chip">VS Code · HTML/CSS</span></div></div>
+</div></section>
+
+<section><h2 class="mono">03 / Experience</h2>
+<div class="tl">
+<div class="it"><span class="when mono">JAN 2026 – PRESENT</span><h3>Team Lead – Data Annotation Labelling</h3><div class="org">iMerit Technology Services Pvt. Ltd.</div>
+<ul><li>Direct daily operations, task allocation and workflow priorities for 25+ operators (including ILs and QAs) across 2D, 3D and video annotation deliverables.</li><li>Sustain 130%+ efficiency, 99%+ quality accuracy and 90%+ utilization through proactive KPI tracking and timely corrective actions.</li><li>Build and maintain Google Sheets dashboards and Apps Script automations for real-time KPI reporting and monitoring.</li><li>Lead quality feedback sessions, error root-cause tracking and structured performance reviews to improve delivery consistency.</li></ul></div>
+<div class="it"><span class="when mono">SEP 2023 – DEC 2025</span><h3>ITES Executive – Computer Vision Annotation / IL &amp; QA</h3><div class="org">iMerit Technology Services Pvt. Ltd.</div>
+<ul><li>Executed high-precision computer vision labeling and multi-tier QA audits for autonomous-mobility workflows.</li><li>Labeled 3D LiDAR scenes for multi-class vehicles and annotated roadside and highway signage under strict guidelines.</li><li>Reviewed complex edge-case scenes and collaborated on guideline clarifications to improve first-pass accuracy.</li></ul></div>
+<div class="it"><span class="when mono">JUN 2022 – OCT 2022</span><h3>Computer Vision Data Annotator</h3><div class="org">iMerit Technology Services Pvt. Ltd.</div>
+<ul><li>Annotated image datasets for autonomous navigation models, adhering strictly to labeling instructions and quality benchmarks.</li></ul></div>
+</div></section>
+<a class="btn" id="resume" href="Shaikh_Mohammed_Resume_Team_Lead.pdf" download>⬇ Download Resume (PDF)</a>
+</div>
+
+<!-- SHARED -->
+<section><h2 class="mono">Projects</h2>
+<div class="grid proj">
+<div class="card"><span class="tag mono">Omni Labeller</span><h3 style="margin-top:8px">Latitude AI</h3><p>2D, 3D and video annotation for autonomous-mobility workflows and point-cloud labeling.</p></div>
+<div class="card"><span class="tag mono">Golden Algo</span><h3 style="margin-top:8px">CARIAD</h3><p>2D image and computer vision annotation aligned with automotive quality standards.</p></div>
+<div class="card"><span class="tag mono">Ango Hub</span><h3 style="margin-top:8px">Minerva</h3><p>2D and 3D image data annotation with multi-tier quality verification.</p></div>
+<div class="card"><span class="tag mono">3D LiDAR · CV</span><h3 style="margin-top:8px">Ford AI Autonomous Mobility</h3><p>Computer vision and 3D LiDAR point-cloud annotation for autonomous perception models.</p></div>
+</div></section>
+
+<section><h2 class="mono">Education &amp; Languages</h2>
+<div class="grid"><div class="card"><h3>Diploma in Computer Science</h3><div class="org">R.N. Shetty Polytechnic, Belagavi · 2018 – 2021</div></div>
+<div class="card"><h3>Languages</h3><div class="chips"><span class="chip">English</span><span class="chip">Kannada</span><span class="chip">Urdu</span><span class="chip">Hindi</span><span class="chip">Arabic</span></div><div class="org" style="margin-top:8px">Read, write and speak in all five</div></div></div></section>
+
+<section id="contact"><h2 class="mono">Contact</h2>
+<div class="ct">
+<a href="mailto:smjouharali87@gmail.com"><small class="mono">Email</small>smjouharali87@gmail.com</a>
+<a href="tel:+917483537121"><small class="mono">Phone</small>+91 7483537121</a>
+<a href="https://linkedin.com/in/shaikh-muhammad-2a6ab0367" target="_blank" rel="noopener"><small class="mono">LinkedIn</small>shaikh-muhammad-2a6ab0367</a>
+<div><small class="mono">Location</small>Dharwad, Karnataka, India</div>
+</div></section>
+</main>
+<footer class="mono">© <span id="yr"></span> Shaikh Mohammed Joharali Aralikatti</footer>
+
+<script>
+document.getElementById("yr").textContent=new Date().getFullYear();
+return}}catch(x){if(x&&x.code==="declined")return}
+ var w=null;try{w=window.open(u,"_blank")}catch(x){}
+ if(!w){try{location.href=u}catch(x){}}
+});
+// LiDAR sweep
+(function(){var c=document.getElementById("lidar"),x=c.getContext("2d"),W,H,P=[],rm=matchMedia("(prefers-reduced-motion:reduce)").matches,a0=0;
+function sz(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;P=[];var cx=W*.8,cy=H*.55,R=Math.max(W,H)*.7;
+ for(var r=40;r<R;r+=26){var n=Math.floor(r/4);for(var i=0;i<n;i++){var a=Math.random()*6.283,j=(Math.random()-.5)*10;
+ if(Math.random()<.55)P.push({x:cx+Math.cos(a)*(r+j),y:cy+Math.sin(a)*(r+j)*.5,a:a})}}}
+sz();addEventListener("resize",sz);
+function f(){x.clearRect(0,0,W,H);a0+=rm?0:.018;var cx=W*.8,cy=H*.55;
+ P.forEach(function(p){var d=((a0-p.a)%6.283+6.283)%6.283,al=Math.max(.08,.9-d*.28);x.fillStyle="rgba(34,211,238,"+al*.7+")";x.fillRect(p.x,p.y,1.8,1.8)});
+ x.strokeStyle="rgba(59,130,246,.5)";x.lineWidth=1.5;x.beginPath();x.moveTo(cx,cy);x.lineTo(cx+Math.cos(a0)*W,cy+Math.sin(a0)*W*.5);x.stroke();
+ x.fillStyle="#3b82f6";x.beginPath();x.arc(cx,cy,4,0,6.283);x.fill();
+ if(!rm)requestAnimationFrame(f)}f()})();
+</script>
+</body>
+</html>
